@@ -38,8 +38,14 @@
 ![적립 취소](https://user-images.githubusercontent.com/40571451/105216522-05797500-5b96-11eb-8a03-b1940fa7ed8c.PNG)
 
 
-결제가 완료/취소되면 포인트View (MyPoint)에 데이터가 같이 생성된다.(CQRS)
+#CQRS
 
+결제가 완료/취소되면 포인트View (MyPoint)에 데이터가 같이 생성된다.
+
+1) 결제 성공시 조회
+
+2) 결제 취소시 조회
+![포인트조회](https://user-images.githubusercontent.com/40571451/105219181-8128f100-5b99-11eb-86c5-94775a5adbe9.PNG)
 
 
 #장애 격리
