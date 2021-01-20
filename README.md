@@ -21,7 +21,7 @@
 
 
 # Event Storming 모델
- ![images](https://user-images.githubusercontent.com/40571451/105208553-2a68ea80-5b8c-11eb-958c-16411a54533f.png)
+ ![images](https://user-images.githubusercontent.com/40571451/105222649-1fb75100-5b9e-11eb-8b48-f6e6e55aa505.png)
 
 
 ## 구현 Test
