@@ -29,13 +29,15 @@
 #주문 생성&취소 CQRS (Req/Res,Correaltion-Key,SAGA)
 
 주문 성공 (OrderId: 3)
-![주문](https://user-images.githubusercontent.com/40571451/105216338-c1867000-5b95-11eb-98e0-ced8b5e64cfb.PNG)
+![주문](https://user-images.githubusercontent.com/40571451/105226228-14b2ef80-5ba3-11eb-92aa-c758e4605472.PNG)
+![주문성공](https://user-images.githubusercontent.com/40571451/105226236-167cb300-5ba3-11eb-98cb-4aa2c4519f66.PNG)
 
-주문 뒤, 결제가 성공한다면 아래와 같이 포인트 적립 성공 (Req/Res --- 동기)
-![포인트 적립](https://user-images.githubusercontent.com/40571451/105216512-04484800-5b96-11eb-8e4c-15dd4f45c874.PNG)
+주문 뒤, 결제가 성공한다면 아래와 같이 포인트 생성 (Req/Res --- 동기)
+![포인트적립성공](https://user-images.githubusercontent.com/40571451/105226257-1bd9fd80-5ba3-11eb-8b68-d821e5d24128.PNG)
 
 해당 주문 건(OrderId: 3)을 취소한다면, 결제가 취소되며 결제번호와 매핑된 포인트 적립 취소 (Pub/Sub --- 비동기)
-![적립 취소](https://user-images.githubusercontent.com/40571451/105216522-05797500-5b96-11eb-8a03-b1940fa7ed8c.PNG)
+![주문취소](https://user-images.githubusercontent.com/40571451/105226247-18467680-5ba3-11eb-956b-1b52052f0e13.PNG)
+![취소적립현황](https://user-images.githubusercontent.com/40571451/105226251-1a103a00-5ba3-11eb-9656-aefa575f6953.PNG)
 
 
 #CQRS
