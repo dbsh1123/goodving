@@ -25,7 +25,7 @@
 
 ## 구현 점검
 
-#주문 생성, 취소 , CQRS (req/res,correaltion-key,saga)
+#주문 생성&취소 CQRS (Req/Res,Correaltion-Key,SAGA)
 
 주문을 생성하고 결제가 완료되면 마일리지가 생성된다(동기,req/res)
 
