@@ -23,12 +23,14 @@
 # Event Storming 모델
  ![images](https://user-images.githubusercontent.com/40571451/105208553-2a68ea80-5b8c-11eb-958c-16411a54533f.png)
 
-## 구현 점검
+## 구현 Test
 
 #주문 생성&취소 CQRS (Req/Res,Correaltion-Key,SAGA)
 
-주문을 하고 결제가 이루어진다면 포인트가 적립된다. (Req/Res --- 동기)
+주문 성공
+![주문](https://user-images.githubusercontent.com/40571451/105216338-c1867000-5b95-11eb-98e0-ced8b5e64cfb.PNG)
 
+주문을 하고 결제가 이루어진다면 포인트가 적립된다. (Req/Res --- 동기)
 ![reqres-2](https://user-images.githubusercontent.com/41769626/105133623-6a9a7f80-5b30-11eb-8d83-1db0f6fb22c7.PNG)
 ![reqres](https://user-images.githubusercontent.com/41769626/105133651-77b76e80-5b30-11eb-9adf-2edfc8feac2c.PNG)
 
