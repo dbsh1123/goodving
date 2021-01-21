@@ -48,7 +48,7 @@ amount: 주문량
 rate : 주문량이 5건 이상일 시, 적립율 20% 이외 10%  
 ![포인트적립성공](https://user-images.githubusercontent.com/40571451/105259746-b6e8cc80-5bcf-11eb-80cb-60ea5f8ea7af.PNG)  
 
-결제 취소시 조회
+결제 취소시 조회  
 ![포인트조회](https://user-images.githubusercontent.com/40571451/105219181-8128f100-5b99-11eb-86c5-94775a5adbe9.PNG)
 
 
