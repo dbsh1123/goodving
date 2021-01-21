@@ -33,7 +33,9 @@
 ![주문성공](https://user-images.githubusercontent.com/40571451/105226236-167cb300-5ba3-11eb-98cb-4aa2c4519f66.PNG)
 
 주문 뒤, 결제가 성공한다면 아래와 같이 포인트 생성 (Req/Res --- 동기)
-![포인트적립성공](https://user-images.githubusercontent.com/40571451/105226257-1bd9fd80-5ba3-11eb-8b68-d821e5d24128.PNG)
+amount: 주문량
+rate : 주문량이 5건 이상일 시, 적립율 20% 이외 10%
+![포인트적립성공](https://user-images.githubusercontent.com/40571451/105259540-53f73580-5bcf-11eb-97ba-868522949af0.PNG)
 
 해당 주문 건(OrderId: 3)을 취소한다면, 결제가 취소되며 결제번호와 매핑된 포인트 적립 취소 (Pub/Sub --- 비동기)
 ![주문취소](https://user-images.githubusercontent.com/40571451/105226247-18467680-5ba3-11eb-956b-1b52052f0e13.PNG)
