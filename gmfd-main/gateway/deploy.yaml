@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  labels:
+    app: gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway
+  template:
+    metadata:
+      labels:
+        app: gateway
+    spec:
+      containers:
+        - name: gateway
+          image: hscrg.azurecr.io/gateway:v9
+          ports:
+            - containerPort: 8080
+          env:
+          - name: orderurl
+            valueFrom:
+              configMapKeyRef:
+                name: test-cm
+                key: ou
+          - name: customerurl
+            valueFrom:
+              configMapKeyRef:
+                name: test-cm
+                key: cu
+          - name: delivery
+            valueFrom:
+              configMapKeyRef:
+                name: test-cm
+                key: du
+          - name: foodcatalogurl
+            valueFrom:
+              configMapKeyRef:
+                name: test-cm
+                key: fu
+          - name: paymenturl
+            valueFrom:
+              configMapKeyRef:
+                name: test-cm
+                key: pu

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodCatalog
+  labels:
+    app: foodCatalog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodCatalog
+  template:
+    metadata:
+      labels:
+        app: foodCatalog
+    spec:
+      containers:
+        - name: foodCatalog
+          image: hscrg.azurecr.io/foodCatalog:latest
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,17 @@
+gmfd\FoodCatalogViewRepository.class
+gmfd\CatalogDeleted.class
+gmfd\AbstractEvent$1.class
+gmfd\OrderCancelled.class
+gmfd\CatalogUpdated.class
+gmfd\config\kafka\KafkaProcessor.class
+gmfd\PolicyHandler.class
+gmfd\FoodCatalogViewViewHandler.class
+gmfd\FoodCatalogController.class
+gmfd\Ordered.class
+gmfd\CatalogOutofstock.class
+gmfd\AbstractEvent.class
+gmfd\CatalogRegistered.class
+gmfd\FoodCatalogView.class
+gmfd\FoodCatalog.class
+gmfd\FoodCatalogApplication.class
+gmfd\FoodCatalogRepository.class
