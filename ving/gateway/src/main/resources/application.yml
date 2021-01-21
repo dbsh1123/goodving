@@ -1,0 +1,90 @@
+server:
+  port: 8088
+
+---
+
+spring:
+  profiles: default
+  cloud:
+    gateway:
+      routes:
+        - id: order
+          uri: http://localhost:8081
+          predicates:
+            - Path=/orders/** 
+        - id: delivery
+          uri: http://localhost:8082
+          predicates:
+            - Path=/deliveries/**,/cancellations/**
+        - id: customer
+          uri: http://localhost:8083
+          predicates:
+            - Path=/customers/**,/myOrders/**
+        - id: payment
+          uri: http://localhost:8084
+          predicates:
+            - Path=/pays/** 
+        - id: foodCatalog
+          uri: http://localhost:8086
+          predicates:
+            - Path=/foodCatalogs/**,/foodCatalogViews/**
+        - id: point
+          uri: http://localhost:8087
+          predicates:
+            - Path=/points/**,/myPoints/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+
+---
+
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: order
+          uri: ${orderurl}
+          predicates:
+            - Path=/orders/**
+        - id: delivery
+          uri: ${delivery}
+          predicates:
+            - Path=/deliveries/**,/cancellations/**
+        - id: customer
+          uri: ${customerurl}
+          predicates:
+            - Path=/customers/**,/myOrders/**
+        - id: payment
+          uri: ${paymenturl}
+          predicates:
+            - Path=/pays/**
+        - id: foodcatalog
+          uri: ${foodcatalogurl}
+          predicates:
+            - Path=/foodCatalogs/**,/foodCatalogViews/**
+        - id: point
+          uri: ${pointurl}
+          predicates:
+            - Path=/points/**,/myPoints/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080

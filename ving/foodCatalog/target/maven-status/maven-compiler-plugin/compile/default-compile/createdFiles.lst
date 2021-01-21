@@ -1,0 +1,16 @@
+ving\FoodCatalog.class
+ving\AbstractEvent$1.class
+ving\OrderCancelled.class
+ving\CatalogUpdated.class
+ving\config\kafka\KafkaProcessor.class
+ving\FoodCatalogViewViewHandler.class
+ving\AbstractEvent.class
+ving\FoodCatalogController.class
+ving\FoodCatalogRepository.class
+ving\FoodCatalogViewRepository.class
+ving\Ordered.class
+ving\PolicyHandler.class
+ving\CatalogDeleted.class
+ving\FoodCatalogApplication.class
+ving\FoodCatalogView.class
+ving\CatalogRegistered.class

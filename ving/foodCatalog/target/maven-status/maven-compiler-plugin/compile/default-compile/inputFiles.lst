@@ -1,0 +1,15 @@
+C:\dev\ving\foodCatalog\src\main\java\ving\config\kafka\KafkaProcessor.java
+C:\dev\ving\foodCatalog\src\main\java\ving\PolicyHandler.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogRepository.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogViewViewHandler.java
+C:\dev\ving\foodCatalog\src\main\java\ving\AbstractEvent.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogView.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogController.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogApplication.java
+C:\dev\ving\foodCatalog\src\main\java\ving\CatalogRegistered.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalogViewRepository.java
+C:\dev\ving\foodCatalog\src\main\java\ving\OrderCancelled.java
+C:\dev\ving\foodCatalog\src\main\java\ving\CatalogDeleted.java
+C:\dev\ving\foodCatalog\src\main\java\ving\FoodCatalog.java
+C:\dev\ving\foodCatalog\src\main\java\ving\Ordered.java
+C:\dev\ving\foodCatalog\src\main\java\ving\CatalogUpdated.java
