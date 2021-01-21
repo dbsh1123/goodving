@@ -26,7 +26,7 @@
 
 ## 구현 Test
 
-#주문 생성&취소 CQRS (Req/Res,Correaltion-Key,SAGA)
+#주문 생성&취소 CQRS (Correaltion-Key,SAGA)
 
 주문 성공 (OrderId: 3)  
 ![주문](https://user-images.githubusercontent.com/40571451/105226228-14b2ef80-5ba3-11eb-92aa-c758e4605472.PNG)  
