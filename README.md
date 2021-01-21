@@ -29,7 +29,7 @@
 #주문 생성&취소 CQRS (Req/Res,Correaltion-Key,SAGA)
 
 주문 성공 (OrderId: 3)  
-![주문](https://user-images.githubusercontent.com/40571451/105226228-14b2ef80-5ba3-11eb-92aa-c758e4605472.PNG)
+![주문](https://user-images.githubusercontent.com/40571451/105226228-14b2ef80-5ba3-11eb-92aa-c758e4605472.PNG)  
 ![주문성공](https://user-images.githubusercontent.com/40571451/105226236-167cb300-5ba3-11eb-98cb-4aa2c4519f66.PNG)
 
 주문 뒤, 결제가 성공한다면 아래와 같이 포인트 생성 (Req/Res --- 동기)
